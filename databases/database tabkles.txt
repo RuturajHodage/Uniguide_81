@@ -1,0 +1,49 @@
+To store information about universities, colleges, and courses 
+offered by colleges in a MySQL database, you can create the following tables:
+
+1. University table:
+
+CREATE TABLE University (
+  id INT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  location VARCHAR(255) NOT NULL,
+  founded_year INT,
+  website VARCHAR(255)
+);
+
+
+2. College table:
+
+CREATE TABLE College (
+  id INT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  university_id INT,
+  location VARCHAR(255) NOT NULL,
+  established_year INT,
+  website VARCHAR(255),
+  FOREIGN KEY (university_id) REFERENCES University(id)
+);
+
+
+3. Course table:
+
+CREATE TABLE Course (
+  id INT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  college_id INT,
+  department VARCHAR(255) NOT NULL,
+  duration INT,
+  FOREIGN KEY (college_id) REFERENCES College(id)
+);
+
+
+CREATE TABLE CourseDetails (
+  id INT PRIMARY KEY,
+  course_id INT,
+  college_id INT,
+  intake INT,
+  FOREIGN KEY (course_id) REFERENCES Course(id),
+  FOREIGN KEY (college_id) REFERENCES College(id)
+);
+
+
