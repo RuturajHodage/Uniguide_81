@@ -1,0 +1,146 @@
+/* McqTest.css */
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .question-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .question-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .question-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .options-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .option-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .selected-option {
+    background-color: #5bc0de;
+    color: #ffffff;
+  }
+  
+  .option-number {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .option {
+    font-size: 16px;
+  }
+  
+  .selection-indicator {
+    margin-left: auto;
+    color: #5bc0de;
+  }
+  
+  .next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5bc0de;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .result-text {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+  .quiz-doughnut-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 210px; /* Added margin to the bottom */
+  }
+  
+  .quiz-doughnut-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25%;
+  }
+  
+  .quiz-doughnut-chart-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .quiz-doughnut-footer {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+
+  .doughnut-chart-container {
+  width: 45%; /* Adjust the width as needed */
+}
+  
+  
+  
+  

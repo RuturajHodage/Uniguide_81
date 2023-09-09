@@ -1,0 +1,75 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    /* Your navigation bar styles here */
+}
+
+/* Hero Section Styles */
+.hero {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 180%;
+    object-fit: cover;
+}
+
+/* Education Content Styles */
+.education-content {
+    padding: 2rem;
+    text-align: center;
+    background-color: #c9ecf9;
+    /* Add a light background color */
+}
+
+.education-content p {
+    font-size: 2rem;
+    /* Increase font size */
+    color: #333;
+    /* Text color */
+    line-height: 1.5;
+    /* Improved readability with line height */
+}
+
+/* Creator Section Styles */
+.creators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.creator {
+    text-align: center;
+    margin: 1rem;
+}
+
+.creator img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .creators {
+        flex-direction: column;
+    }
+}
